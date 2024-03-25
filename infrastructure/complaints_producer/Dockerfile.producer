@@ -1,0 +1,8 @@
+FROM python:3.9
+WORKDIR /app
+
+COPY reqs.txt .
+COPY streaming.py .
+
+RUN pip install -r reqs.txt
+CMD ["python",  "streaming.py"]
