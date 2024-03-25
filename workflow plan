@@ -1,0 +1,2 @@
+load to raw (prisoners.tsv + cummulative_boroughs.csv for extracting common patterns) > drop_prisoners_columns.py (added to curated as prisoners-df, this will be loaded directly to speed up the process) > transform_for_consumption.py  (saved as prisoners_batch_queries)> add_borough_column.py (results saved in consumption zone as mapped_boroughs) > extract_common_crime_patterns.py (saves common_patterns to consumption zone) after this is completed stream processing can start
+batch processing can be started as soon as transform_for_consumption.py has finished

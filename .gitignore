@@ -3,3 +3,4 @@ prisoners-df-copy
 metabase-data
 postgresql-42.7.2.jar
 to_drop.txt
+kafka_init container
