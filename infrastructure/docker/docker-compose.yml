@@ -6,7 +6,7 @@ services:
     container_name: namenode
     volumes:
       - hadoop_namenode:/hadoop/dfs/name
-      - ../../data/from_hdfs/prisoners-df:/spark-output/:rw
+      - ../../data/from_hdfs/:/spark-output/:rw
     environment:
       - CLUSTER_NAME=test
     env_file:
